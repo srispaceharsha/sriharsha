@@ -48,13 +48,13 @@ video {
     }
 
 #title {
-  text-align: center;
+  text-align: left;
 }
 
 
 .poem {
       width: 100%;
-      text-align: center;
+      text-align: left
       
       }
 
