@@ -3,7 +3,7 @@ body {
   font-family: Georgia, serif;   /* nice readable font */
   margin: 15px;                  /* space from edges */
   line-height: 1.1;              /* better readability */
-  max-width: 800px;              /* keeps text easy to read */
+  max-width: 900px;              /* keeps text easy to read */
   margin-left: auto;
   margin-right: auto; 
   font-size: 20px;           /* centers content */
