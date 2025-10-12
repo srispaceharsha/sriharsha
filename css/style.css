@@ -1,68 +1,53 @@
 /* style.css */
+
+/* Base layout */
 body {
-  font-family: Georgia, serif;   /* nice readable font */
-  margin: 15px;                  /* space from edges */
-  line-height: 1.1;              /* better readability */
-  max-width: 900px;              /* keeps text easy to read */
-  margin-left: auto;
-  margin-right: auto; 
-  font-size: 20px;           /* centers content */
+  font-family: Georgia, serif;
+  margin: 15px auto;
+  line-height: 1.1;
+  max-width: 900px;
+  font-size: clamp(18px, 2vw, 20px); /* responsive scaling */
+  padding: 0 10px;                   /* avoids text touching screen edges */
 }
 
+/* Headings */
 h1 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
+/* Links */
 a {
   text-decoration: none;
   color: blue;
 }
 
+/* Paragraphs */
 p {
-  white-space: pre-line; /* respects line breaks in HTML */
+  white-space: pre-line;
 }
 
-@media (max-width: 800px) {
-  body {
-    font-size: 18px; /* slightly smaller font for small screens */
-    padding: 10px;
-  }
-}
-
-img {
-  max-width: 100%;   /* image never wider than container */
-  height: auto;      /* keeps aspect ratio */
-  display: block;    /* removes small gaps under images */
-  margin: 10px auto; /* centers image with space around */
+/* Images & Videos */
+img, video {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
 }
 
 video {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-      max-height: 80vh;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
 
-    }
-
-#title {
+/* Text blocks */
+.poem, .prose {
   text-align: left;
 }
 
-
-.poem {
-      width: 100%;
-      text-align: left
-      
-      }
-
-.prose {
-      width: 100%;
-      text-align: left;
-      }
-
+/* Section divider */
 .divider {
   display: flex;
   align-items: center;
@@ -86,6 +71,22 @@ video {
 }
 
 .divider span {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.1em;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  body {
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .divider {
+    margin: 1.5rem 0;
+  }
 }
