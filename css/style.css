@@ -25,7 +25,7 @@ p {
 
 @media (max-width: 800px) {
   body {
-    font-size: 14px; /* slightly smaller font for small screens */
+    font-size: 18px; /* slightly smaller font for small screens */
     padding: 10px;
   }
 }
