@@ -4,7 +4,7 @@
 body {
   font-family: Georgia, serif;
   margin: 15px auto;
-  line-height: 1.1;
+  line-height: 1.2;
   max-width: 900px;
   font-size: clamp(18px, 2vw, 20px); /* responsive scaling */
   padding: 0 10px;                   /* avoids text touching screen edges */
